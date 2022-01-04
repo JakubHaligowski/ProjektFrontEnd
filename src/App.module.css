@@ -1,0 +1,33 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;    
+}
+
+.background {
+  height: 800px;
+  width: 1350px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+  background: #e2e6ff;
+  box-shadow: 4px 4px 6px #d3d9ff;
+  border-radius: 36px;
+}
+
+#main_window{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 700px;
+  width: 880px;
+  background-color: #ffffff;
+  border-radius: 35px;
+}
+
+

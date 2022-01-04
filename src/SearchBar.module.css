@@ -1,0 +1,14 @@
+#search_bar{
+    margin-top: 30px;
+    width: 468px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    align-self: center;
+    line-height: 40px;
+        
+    background: #FFFFFF;
+    color: #C5CAD0;
+    box-shadow: 0px 4px 9px -1px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+}
