@@ -1,6 +1,6 @@
-import { ReactComponent as NotificationsIcon } from "./icons/notifications_icon.svg";
-import { ReactComponent as SettingsIcon } from "./icons/settings_icon.svg";
-import { ReactComponent as Logo } from "./icons/Logo.svg";
+import { ReactComponent as NotificationsIcon } from "../icons/notifications_icon.svg";
+import { ReactComponent as SettingsIcon } from "../icons/settings_icon.svg";
+import { ReactComponent as Logo } from "../icons/Logo.svg";
 import TopBarButton from "./TopBarButton";
 import styles from "./TopBar.module.css";
 

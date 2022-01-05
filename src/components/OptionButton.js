@@ -4,7 +4,7 @@ import styles from "./OptionButton.module.css";
 function OptionButton(props) {
     
   return (
-    <div className={props.selected ? styles.button_selected : styles.button} onClick={props.onClick}>
+    <div key={props.key} className={props.selected ? styles.button_selected : styles.button} onClick={props.onClick}>
       <div className={styles.button_icon}>
         {props.icon}
       </div>

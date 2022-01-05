@@ -1,5 +1,5 @@
 import styles from "./UpcomingVisit.module.css";
-import doc1 from "./img/doc1.png";
+import doc1 from "../img/doc1.png";
 
 
 function UpcomingVisit(props) {

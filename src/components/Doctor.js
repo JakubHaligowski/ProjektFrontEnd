@@ -1,8 +1,9 @@
 import styles from "./Doctor.module.css";
-import { ReactComponent as Arrow1 } from "./icons/Arrow1.svg"
-import { ReactComponent as Star } from "./icons/Star.svg"
-import doc1 from "./img/doc1.png";
+import { Link } from "react-router-dom";
 
+import { ReactComponent as Arrow1 } from "../icons/Arrow1.svg";
+import { ReactComponent as Star } from "../icons/Star.svg";
+import doc1 from "../img/doc1.png";
 
 function Doctor(props) {
   return (
@@ -19,8 +20,16 @@ function Doctor(props) {
         </div>
       </div>
       <div>
-        <div><span id={styles.opinions}>przeglądaj opinie</span> <Star/> <span id={styles.raiting}>{props.raiting}</span></div>
-        <div id={styles.button}>Umów wizytę<Arrow1/></div>
+        <div>
+          <span id={styles.opinions}>przeglądaj opinie</span> <Star />{" "}
+          <span id={styles.raiting}>{props.raiting}</span>
+        </div>
+        <Link to="/new"  style={{ textDecoration: 'none' }}>
+          <div id={styles.button}>
+            Umów wizytę
+            <Arrow1 />
+          </div>
+        </Link>
       </div>
     </div>
   );
