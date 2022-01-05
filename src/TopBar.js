@@ -6,15 +6,13 @@ import styles from "./TopBar.module.css";
 
 function TopBar() {
   return (
-    <div>
-      <div id={styles.container}>
-        <div id={styles.logo}>
-          <Logo />
-        </div>
-        <div id={styles.buttons_container}>
-          <TopBarButton icon={<NotificationsIcon />} text="Powiadomienia" />
-          <TopBarButton icon={<SettingsIcon />} text="Ustawienia" />
-        </div>
+    <div id={styles.container}>
+      <div id={styles.logo}>
+        <Logo />
+      </div>
+      <div id={styles.buttons_container}>
+        <TopBarButton icon={<NotificationsIcon />} text="Powiadomienia" />
+        <TopBarButton icon={<SettingsIcon />} text="Ustawienia" />
       </div>
     </div>
   );

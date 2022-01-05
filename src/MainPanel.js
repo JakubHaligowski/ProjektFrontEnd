@@ -20,14 +20,14 @@ const doctors = [
   {
     id: 3,
     name: "Anna Skóra",
-    specialization: "Proktolog",
+    specialization: "Lekarz rodzinny",
     date: "21.06",
     raiting: "4.9",
   },
   {
     id: 4,
     name: "Anna Skóra",
-    specialization: "Proktolog",
+    specialization: "Lekarz rodzinny",
     date: "21.06",
     raiting: "4.9",
   },

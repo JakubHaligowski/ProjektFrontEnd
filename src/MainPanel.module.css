@@ -25,3 +25,9 @@
   flex-direction: column;
   overflow-y: auto;
 }
+
+@media only screen and (max-width: 1040px) {
+  .main_panel {
+    box-shadow: none;
+  }
+}

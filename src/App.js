@@ -14,8 +14,8 @@ function App() {
           <OptionsPanel />
           <MainPanel />
         </div>
-        <div>
-          <Window
+        <div id={styles.small_windows}>
+          <Window className={styles.window}
             title="Nadchodzące wizyty"
             content={
               <UpcomingVisit
@@ -25,8 +25,7 @@ function App() {
               />
             }
           />
-          <br></br>
-          <Window title="Czat online" />
+          <Window className={styles.window} title="Czat online" />
         </div>
       </div>
     </div>

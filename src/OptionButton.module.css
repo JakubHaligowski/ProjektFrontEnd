@@ -29,6 +29,7 @@
     box-sizing: border-box;
     border-radius: 28px;
   }
+  
 
   .button:hover{
     background-color: rgb(226, 226, 228);
@@ -44,4 +45,28 @@
 .button_text{
     margin-left: 30px;
     align-self: center;
+  }
+
+
+  @media only screen and (max-width: 1040px){
+    .button_text{
+      display: none;
+    }
+
+    .button{
+      border-radius: 50%;
+      width: 70px;
+      margin: 0px;
+    }
+
+    .button_selected{
+      border-radius: 50%;
+      width: 70px;
+      margin: 0px;
+    }
+
+    .button_icon{
+      margin-left: 16px;
+    }
+
   }
