@@ -3,7 +3,9 @@ import TopBar from "../components/TopBar";
 import UniWindow from "../components/UniWindow";
 import ChosenDoctor from "../components/ChosenDoctor";
 import VisitDetails from "../components/VisitDetails";
-import VisitDetailsButton from "../components/VisitDetailsButton";
+import BackButton from "../components/BackButton";
+import AcceptButton from "../components/AcceptButton";
+import { Link } from "react-router-dom";
 
 function NewReservationPage() {
   return (
@@ -31,12 +33,19 @@ function NewReservationPage() {
           label="Wybierz termin wizyty"
           content="Tu trzeba wstawić jebany kalendarz"
         />
-
         <UniWindow
           id={styles.time}
           label="Wybierz godzinę wizyty"
           content="Tu trzeba wstawić jebany wybór godziny"
         />
+        <div id={styles.buttons}>
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <BackButton />
+          </Link>
+          <Link to="/confirm" style={{ textDecoration: "none" }}>
+            <AcceptButton text="Umów wizyte" />
+          </Link>
+        </div>
       </div>
     </div>
   );

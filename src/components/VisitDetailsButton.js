@@ -1,5 +1,6 @@
 import styles from './VisitDetailsButton.module.css'
 
+
 function VisitDetailsButton(props) {
     return (
         <div onClick={props.onClick} className={props.selected ? styles.button_selected : styles.button}>

@@ -9,12 +9,13 @@
 
 .background {
   display: grid;
-  grid-template-columns: 100px 560px 140px 450px 100px;
+  grid-template-columns: 1fr 560px 1.4fr 450px 1fr;
+  /* grid-template-columns: 100px 560px 140px 450px 100px; */
   grid-template-rows: 60px 210px 60px 75px 30px 225px 25px 45px 13px 57px;
   height: 800px;
   width: 1350px;
 
-  background: #e2e6ff;
+  background-color: #e2e6ff;
   box-shadow: 4px 4px 6px #d3d9ff;
   border-radius: 36px;
 }
@@ -39,34 +40,69 @@
   grid-row: 6/7;
 }
 
-@media only screen and (max-width: 1350px) {
-  .background {
-    flex-direction: column;
-    width: 90vw;
-    height: 1040px;
-  }
+#buttons{
+  display: flex;
+  flex-direction: row;
+  grid-column: 4/5;
+  grid-row: 8/10;
+}
 
-  #main_window {
-    margin-top: 30px;
+@media only screen and (max-width: 1350px) {
+  .background{
+    width: 90vw;
+    height: auto;
   }
 }
 
-@media only screen and (max-width: 1040px) {
-  .container {
-    height: 100vh;
+@media only screen and (max-width: 1250px) {
+  
+  .background{
+    grid-template-columns: 10vw 570px 10vw;
+    grid-template-rows:  200px 350px 415px 260px 58px;
+    row-gap: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: auto;
+  }
+
+  #doctor{
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  #visit_details{
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  #calendar{
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  #time{
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }  
+  
+  #buttons{
+    grid-column: 2/3;
+    grid-row: 5/6;
+  }
+
+}
+
+@media only screen and (max-width: 800px){
+  
+  .container{
     background-color: #e2e6ff;
+    overflow:hidden;
   }
 
-  .background {
+
+  .background{
+    grid-template-columns: 8vw 84vw 8vw;
     box-shadow: none;
-    justify-content: flex-end;
-    height: 815px;
   }
 
-  #main_window {
-    flex-direction: column-reverse;
-    align-items: center;
-    width: 600px;
-    margin: 0;
-  }
 }

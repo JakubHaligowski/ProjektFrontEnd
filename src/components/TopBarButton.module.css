@@ -16,7 +16,8 @@
 }
 
 .button:hover {
-  background-color: #d3d3d3;
+  background-color: rgb(243, 243, 243);
+  cursor: pointer;
 }
 
 .icon {
