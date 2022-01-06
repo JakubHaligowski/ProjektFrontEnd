@@ -1,10 +1,10 @@
 # TODO
--dodać przekazywanie informacji między podstronami
--dodać wybór daty oraz godziny wizyty
--poprawić css (jednakowanie cienie na wszystkich okienkach)
--lepsze skalowanie dla wersji mobilnej (główna strona)
--skończyć stronę potwierdzania rezerwacji
--pogrupować pliki w folderze /components
+-dodać przekazywanie informacji między podstronami\
+-dodać wybór daty oraz godziny wizyty\
+-poprawić css (jednakowanie cienie na wszystkich okienkach)\
+-lepsze skalowanie dla wersji mobilnej (główna strona)\
+-skończyć stronę potwierdzania rezerwacji\
+-pogrupować pliki w folderze /components\
 
 # Getting Started with Create React App
 
