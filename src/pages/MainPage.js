@@ -22,7 +22,7 @@ function MainPage() {
               <UpcomingVisit
                 name="Jacek Soplica"
                 date="Pojutrze"
-                purpose="Zajebać się"
+                purpose="Szczepienie"
               />
             }
           />
