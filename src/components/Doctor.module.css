@@ -42,6 +42,11 @@
   align-self: center;
 }
 
+#picture{
+  width: 70px;
+  border-radius: 17px;
+}
+
 #opinions {
   font-style: normal;
   font-weight: bold;

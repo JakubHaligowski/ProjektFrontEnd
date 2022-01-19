@@ -9,7 +9,7 @@ import { ReactComponent as ProfileIcon } from "../icons/profile_icon.svg";
 import { ReactComponent as SearchIcon } from "../icons/search_icon.svg";
 
 function OptionsPanel() {
-  const [selected, setSeletced] = useState(1);
+  const [selected, setSeletced] = useState(4);
 
   function onSelectHaldler(id) {
     setSeletced(id);
@@ -43,7 +43,7 @@ function OptionsPanel() {
     <div id={styles.panel}>
       {buttons.map((button) => (
         <OptionButton
-          key={buttons.id}
+          key={button.id}
           selected={button.id === selected}
           icon={button.icon}
           text={button.text}

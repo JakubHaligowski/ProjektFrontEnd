@@ -2,9 +2,20 @@ import styles from "./MainPanel.module.css";
 import SearchBar from "./SearchBar";
 import Doctor from "./Doctor";
 
+import doc1 from "../img/doc1.png";
+import doc2 from "../img/doc2.png";
+import doc3 from "../img/doc3.png";
+import doc4 from "../img/doc4.png";
+
+
+//to by się przydało wyrzucić od 
+//jakiegoś JSONA żeby można było z różnych miejsc zaciągać
+
+
 const doctors = [
   {
     id: 1,
+    img: doc1,
     name: "Jacek Soplica",
     specialization: "Pediatra",
     date: "31.12",
@@ -12,6 +23,7 @@ const doctors = [
   },
   {
     id: 2,
+    img: doc2,
     name: "Andrzej Mądry",
     specialization: "Lekarz rodzinny",
     date: "Jutro",
@@ -19,6 +31,7 @@ const doctors = [
   },
   {
     id: 3,
+    img: doc3,
     name: "Anna Skóra",
     specialization: "Lekarz rodzinny",
     date: "21.06",
@@ -26,6 +39,7 @@ const doctors = [
   },
   {
     id: 4,
+    img: doc4,
     name: "Anna Skóra",
     specialization: "Lekarz rodzinny",
     date: "21.06",
@@ -44,6 +58,7 @@ function MainPanel() {
       <div className={styles.doctors}>
         {doctors.map((doctor) => (
           <Doctor
+            img={doctor.img}
             name={doctor.name}
             date={doctor.date}
             raiting={doctor.raiting}

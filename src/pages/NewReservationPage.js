@@ -12,32 +12,26 @@ function NewReservationPage() {
     <div className={styles.container}>
       <TopBar />
       <div className={styles.background}>
-        <UniWindow
-          id={styles.doctor}
-          label="Wybrany lekarz"
-          content={
-            <ChosenDoctor
-              name="Andrzej Mądry"
-              specialization="Pediatra"
-              raiting="3.9"
-            />
-          }
-        />
-        <UniWindow
-          id={styles.visit_details}
-          label="Cel wizyty"
-          content={<VisitDetails />}
-        />
-        <UniWindow
-          id={styles.calendar}
-          label="Wybierz termin wizyty"
-          content="Tu trzeba wstawić jebany kalendarz"
-        />
-        <UniWindow
-          id={styles.time}
-          label="Wybierz godzinę wizyty"
-          content="Tu trzeba wstawić jebany wybór godziny"
-        />
+        <UniWindow id={styles.doctor} label="Wybrany lekarz">
+          <ChosenDoctor
+            name="Andrzej Mądry"
+            specialization="Pediatra"
+            raiting="3.9"
+          />
+        </UniWindow>
+
+        <UniWindow id={styles.visit_details} label="Cel wizyty">
+          <VisitDetails />
+        </UniWindow>
+
+        <UniWindow id={styles.calendar} label="Wybierz termin wizyty">
+          <div>Tu trzeba wstwić komponent z kalendarzem</div>
+        </UniWindow>
+
+        <UniWindow id={styles.time} label="Wybierz godzinę wizyty">
+          <div>Tu trzeba wstwić komponent z godziną wizyty</div>
+        </UniWindow>
+
         <div id={styles.buttons}>
           <Link to="/" style={{ textDecoration: "none" }}>
             <BackButton />

@@ -13,9 +13,11 @@
   flex-direction: column;
   font-style: normal;
   font-weight: normal;
+  height: 100%;
+  justify-content: center;
+  gap: 8px;
   font-size: 18px;
   line-height: 22px;
-  margin-right: 33px;
   color: #676868;
 }
 
@@ -30,6 +32,11 @@
   margin-left: 12px;
   margin-right: 12px;
   align-self: center;
+}
+
+#picture{
+  width: 120px;
+  border-radius: 30px;
 }
 
 #opinions {

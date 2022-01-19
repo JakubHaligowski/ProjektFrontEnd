@@ -2,7 +2,7 @@ import styles from "./MainPage.module.css";
 import TopBar from "../components/TopBar";
 import OptionsPanel from "../components/OptionsPanel";
 import MainPanel from "../components/MainPanel";
-import Window from "../components/Window";
+import SmallWindow from "../components/SmallWindow";
 import UpcomingVisit from "../components/UpcomingVisit";
 
 function MainPage() {
@@ -14,19 +14,19 @@ function MainPage() {
           <OptionsPanel />
           <MainPanel />
         </div>
+
         <div id={styles.small_windows}>
-          <Window
-            className={styles.window}
-            title="Nadchodzące wizyty"
-            content={
-              <UpcomingVisit
-                name="Jacek Soplica"
-                date="Pojutrze"
-                purpose="Szczepienie"
-              />
-            }
-          />
-          <Window title="Czat online" />
+          <SmallWindow className={styles.window} title="Nadchodzące wizyty">
+            <UpcomingVisit
+              name="Jacek Soplica"
+              date="Pojutrze"
+              purpose="Szczepienie"
+            />
+          </SmallWindow>
+
+          <SmallWindow title="Czat online" >
+            <div>Tu chyba jednak social media będą</div>
+          </SmallWindow>
         </div>
       </div>
     </div>

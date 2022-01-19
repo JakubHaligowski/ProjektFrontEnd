@@ -9,7 +9,7 @@ function Doctor(props) {
   return (
     <div className={styles.container}>
       <div id={styles.image}>
-        <img src={doc1} alt="Doctor" id={styles.picture} />
+        <img src={props.img} alt="Doctor" id={styles.picture} />
       </div>
       <div id={styles.info}>
         <span id={styles.title}>lek. {props.name}</span>

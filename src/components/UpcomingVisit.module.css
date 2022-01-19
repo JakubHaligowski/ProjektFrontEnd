@@ -1,10 +1,9 @@
 .container {
-    width: 275px;
+    margin: auto;
+    width: 95%;
     height: 80px;
     margin-bottom: 30px;
     margin-top: 25px;
-    align-self: center;
-    justify-self: center;
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -41,6 +40,11 @@
     margin-left: 12px;
     margin-right: 12px;
     align-self: center;
+  }
+  
+  #picture{
+    width: 70px;
+    border-radius: 17px;
   }
   
   #opinions {

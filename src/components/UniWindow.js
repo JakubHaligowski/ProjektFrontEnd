@@ -6,7 +6,9 @@ function UniWindow(props) {
       <div className={styles.label}>
         <span className={styles.label_text}>{props.label}</span>
       </div>
-      <div className={styles.content}>{props.content}</div>
+      <div className={styles.content}>
+        {props.children}
+        </div>
     </div>
   );
 }
