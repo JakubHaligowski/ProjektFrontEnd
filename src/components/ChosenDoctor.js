@@ -1,24 +1,29 @@
 import styles from "./ChosenDoctor.module.css";
-import doc1 from "../img/doc1.png";
-
 
 import { ReactComponent as Star } from "../icons/Star.svg";
+import { useContext } from "react";
+import { VisitContext } from "../store/visit";
 
 function ChosenDoctor(props) {
+  const {
+    visitState: {
+      doctor: { name, specialization, raiting, img },
+    },
+  } = useContext(VisitContext);
+
   return (
     <div className={styles.container}>
       <div id={styles.image}>
-        <img src={doc1} alt="Doctor" id={styles.picture} />
+        <img src={img} alt="Doctor" id={styles.picture} />
       </div>
       <div id={styles.info}>
-        <span id={styles.title}>lek. {props.name}</span>
-        <span>{props.specialization}</span>
+        <span id={styles.title}>lek. {name}</span>
+        <span>{specialization}</span>
 
         <div>
           <span id={styles.opinions}>przeglądaj opinie</span> <Star />{" "}
-          <span id={styles.raiting}>{props.raiting}</span>
+          <span id={styles.raiting}>{raiting}</span>
         </div>
-
       </div>
     </div>
   );
