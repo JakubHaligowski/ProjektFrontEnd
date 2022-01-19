@@ -5,6 +5,7 @@ import ChosenDoctor from "../components/ChosenDoctor";
 import VisitDetails from "../components/VisitDetails";
 import BackButton from "../components/BackButton";
 import AcceptButton from "../components/AcceptButton";
+import ChooseHour from "../components/ChooseHour";
 import { Link } from "react-router-dom";
 
 function NewReservationPage() {
@@ -29,7 +30,7 @@ function NewReservationPage() {
         </UniWindow>
 
         <UniWindow id={styles.time} label="Wybierz godzinę wizyty">
-          <div>Tu trzeba wstwić komponent z godziną wizyty</div>
+          <ChooseHour/>
         </UniWindow>
 
         <div id={styles.buttons}>

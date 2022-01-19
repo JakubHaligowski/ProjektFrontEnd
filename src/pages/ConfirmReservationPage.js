@@ -8,6 +8,7 @@ import Summary from "../components/Summary";
 import BackButton from "../components/BackButton";
 import AcceptButton from "../components/AcceptButton";
 import Payments from "../components/Payments";
+import UpcomingVisit from "../components/UpcomingVisit";
 
 function ConfirmReservationPage() {
   return (
@@ -23,7 +24,13 @@ function ConfirmReservationPage() {
         <UniWindow id={styles.summary} label="Podsumowanie wizyty">
           <Summary />
         </UniWindow>
-        <UniWindow id={styles.another_visits} label="Inne wizyty"></UniWindow>
+        <UniWindow id={styles.another_visits} label="Inne wizyty">
+          <UpcomingVisit
+            name="Jacek Soplica"
+            date="Pojutrze"
+            purpose="Szczepienie"
+          />
+        </UniWindow>
 
         <div id={styles.buttons}>
           <Link to="/new" style={{ textDecoration: "none" }}>
