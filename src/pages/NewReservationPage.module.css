@@ -30,17 +30,17 @@
   grid-row: 2 / 5;
 }
 
-#calendar{
+#calendar {
   grid-column: 2/3;
   grid-row: 4/9;
 }
 
-#time{
+#time {
   grid-column: 4/5;
   grid-row: 6/7;
 }
 
-#buttons{
+#buttons {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -51,61 +51,56 @@
 }
 
 @media only screen and (max-width: 1350px) {
-  .background{
+  .background {
     width: 90vw;
     height: auto;
   }
 }
 
 @media only screen and (max-width: 1250px) {
-  
-  .background{
+  .background {
     grid-template-columns: 10vw 570px 10vw;
-    grid-template-rows:  200px 350px 415px 260px 58px;
+    grid-template-rows: 200px 350px 415px 260px 58px;
     row-gap: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
     width: auto;
   }
 
-  #doctor{
+  #doctor {
     grid-column: 2/3;
     grid-row: 1/2;
   }
 
-  #visit_details{
+  #visit_details {
     grid-column: 2/3;
     grid-row: 2/3;
   }
 
-  #calendar{
+  #calendar {
     grid-column: 2/3;
     grid-row: 3/4;
   }
 
-  #time{
+  #time {
     grid-column: 2/3;
     grid-row: 4/5;
-  }  
-  
-  #buttons{
+  }
+
+  #buttons {
     grid-column: 2/3;
     grid-row: 5/6;
   }
-
 }
 
-@media only screen and (max-width: 800px){
-  
-  .container{
+@media only screen and (max-width: 800px) {
+  .container {
     background-color: #e2e6ff;
-    overflow:hidden;
+    overflow: hidden;
   }
 
-
-  .background{
+  .background {
     grid-template-columns: 8vw 84vw 8vw;
     box-shadow: none;
   }
-
 }

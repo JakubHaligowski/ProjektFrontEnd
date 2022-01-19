@@ -6,7 +6,7 @@ import { ReactComponent as Star } from "../icons/Star.svg";
 import { useVisitActions } from "../store/visit";
 
 function Doctor(props) {
-  const { img, name, date, raiting, specialization, id } = props.doctor;
+  const { img, name, date, raiting, specialization } = props.doctor;
   const { setDoctor } = useVisitActions();
 
   return (
@@ -27,11 +27,7 @@ function Doctor(props) {
           <span id={styles.opinions}>przeglądaj opinie</span> <Star />{" "}
           <span id={styles.raiting}>{raiting}</span>
         </div>
-        <Link
-          to="/new"
-          onClick={() => console.log(id)}
-          style={{ textDecoration: "none" }}
-        >
+        <Link to="/new" style={{ textDecoration: "none" }}>
           <div id={styles.button} onClick={() => setDoctor(props.doctor)}>
             Umów wizytę
             <Arrow1 />
