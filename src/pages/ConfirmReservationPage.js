@@ -12,19 +12,13 @@ function ConfirmReservationPage() {
       <TopBar />
       <div className={styles.background}>
         <UniWindow id={styles.doctor} label="Wybrany lekarz">
-          <ChosenDoctor
-            name="Andrzej Mądry"
-            specialization="Pediatra"
-            raiting="3.9"
-          />
+          <ChosenDoctor />
         </UniWindow>
         <UniWindow id={styles.payment} label="Płatność"></UniWindow>
         <UniWindow id={styles.summary} label="Podsumowanie wizyty">
           <Summary />
         </UniWindow>
-        <UniWindow id={styles.another_visits} label="Inne wizyty">
-      
-        </UniWindow>
+        <UniWindow id={styles.another_visits} label="Inne wizyty"></UniWindow>
         <div id={styles.buttons}>
           <BackButton />
           <AcceptButton text="Potwierdzam" />
