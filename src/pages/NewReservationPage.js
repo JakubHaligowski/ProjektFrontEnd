@@ -7,8 +7,12 @@ import BackButton from "../components/BackButton";
 import AcceptButton from "../components/AcceptButton";
 import ChooseHour from "../components/ChooseHour";
 import { Link } from "react-router-dom";
+import Calendar from "react-calendar";
+import { useVisitActions } from "../store/visit";
 
 function NewReservationPage() {
+  const { setVisitDate } = useVisitActions();
+
   return (
     <div className={styles.container}>
       <TopBar />
@@ -26,7 +30,10 @@ function NewReservationPage() {
         </UniWindow>
 
         <UniWindow id={styles.calendar} label="Wybierz termin wizyty">
-          <div>Tu trzeba wstwić komponent z kalendarzem</div>
+          <Calendar
+            style={{ border: "none" }}
+            onChange={(value) => setVisitDate(value)}
+          />
         </UniWindow>
 
         <UniWindow id={styles.time} label="Wybierz godzinę wizyty">
