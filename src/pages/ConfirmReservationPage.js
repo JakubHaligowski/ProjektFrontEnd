@@ -18,16 +18,20 @@ function ConfirmReservationPage() {
           <ChosenDoctor />
         </UniWindow>
         <UniWindow id={styles.payment} label="Płatność">
-          <Payments/>
+          <Payments />
         </UniWindow>
         <UniWindow id={styles.summary} label="Podsumowanie wizyty">
           <Summary />
         </UniWindow>
         <UniWindow id={styles.another_visits} label="Inne wizyty"></UniWindow>
+
         <div id={styles.buttons}>
-        <Link to="/new"  style={{ textDecoration: 'none' }}></Link>
-          <BackButton />
-          <AcceptButton text="Potwierdzam" />
+          <Link to="/new" style={{ textDecoration: "none" }}>
+            <BackButton />
+          </Link>
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <AcceptButton text="Potwierdzam" />
+          </Link>
         </div>
       </div>
     </div>
