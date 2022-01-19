@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 import { ReactComponent as Arrow1 } from "../icons/Arrow1.svg";
 import { ReactComponent as Star } from "../icons/Star.svg";
-import doc1 from "../img/doc1.png";
 import { useVisitActions } from "../store/visit";
 
 function Doctor(props) {

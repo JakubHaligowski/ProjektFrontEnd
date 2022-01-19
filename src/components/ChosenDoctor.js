@@ -1,5 +1,4 @@
 import styles from "./ChosenDoctor.module.css";
-import doc1 from "../img/doc1.png";
 
 import { ReactComponent as Star } from "../icons/Star.svg";
 import { useContext } from "react";
