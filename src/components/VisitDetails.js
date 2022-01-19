@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { useVisitActions, VisitContext } from "../store/visit";
 import styles from "./VisitDetails.module.css";
 import VisitDetailsButton from "./VisitDetailsButton";
 
@@ -11,21 +12,27 @@ const buttons = [
 ];
 
 function VisitDetails() {
-  const [selected, setSeletced] = useState(1);
+  const { setVisitType } = useVisitActions();
+  const {
+    visitState: { type },
+  } = useContext(VisitContext);
 
-  function onSelectHaldler(id) {
-    setSeletced(id);
-    console.log(selected);
-  }
+  useEffect(() => {
+    setVisitType(buttons[0]);
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div className={styles.container}>
       {buttons.map((button) => (
         <VisitDetailsButton
-          selected={button.id === selected}
+          selected={button.id === type.id}
           purpose={button.purpose}
           price={button.price}
-          onClick={() => onSelectHaldler(button.id)}
+          onClick={() => {
+            setVisitType(button);
+          }}
         />
       ))}
     </div>

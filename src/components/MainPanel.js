@@ -7,10 +7,8 @@ import doc2 from "../img/doc2.png";
 import doc3 from "../img/doc3.png";
 import doc4 from "../img/doc4.png";
 
-
-//to by się przydało wyrzucić od 
+//to by się przydało wyrzucić od
 //jakiegoś JSONA żeby można było z różnych miejsc zaciągać
-
 
 const doctors = [
   {
@@ -45,7 +43,6 @@ const doctors = [
     date: "21.06",
     raiting: "4.9",
   },
-  
 ];
 
 function MainPanel() {
@@ -57,13 +54,7 @@ function MainPanel() {
       </div>
       <div className={styles.doctors}>
         {doctors.map((doctor) => (
-          <Doctor
-            img={doctor.img}
-            name={doctor.name}
-            date={doctor.date}
-            raiting={doctor.raiting}
-            specialization={doctor.specialization}
-          />
+          <Doctor doctor={doctor} />
         ))}
       </div>
     </div>
