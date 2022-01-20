@@ -60,7 +60,7 @@
     
     .background{
       grid-template-columns: 10vw 570px 10vw;
-      grid-template-rows:  200px 400px 250px 250px 58px;
+      grid-template-rows:  200px 350px 250px 250px 58px;
       row-gap: 40px;
       padding-top: 40px;
       padding-bottom: 30px;

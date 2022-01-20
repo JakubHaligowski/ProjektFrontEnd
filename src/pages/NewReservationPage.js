@@ -9,6 +9,7 @@ import ChooseHour from "../components/ChooseHour";
 import { Link } from "react-router-dom";
 import Calendar from "react-calendar";
 import { useVisitActions } from "../store/visit";
+import "react-calendar/dist/Calendar.css";
 
 function NewReservationPage() {
   const { setVisitDate } = useVisitActions();
@@ -30,14 +31,16 @@ function NewReservationPage() {
         </UniWindow>
 
         <UniWindow id={styles.calendar} label="Wybierz termin wizyty">
-          <Calendar
-            style={{ border: "none" }}
-            onChange={(value) => setVisitDate(value)}
-          />
+          <div id={styles.calendar_container}>
+            <Calendar
+              style={{ border: "none" }}
+              onChange={(value) => setVisitDate(value)}
+            />
+          </div>
         </UniWindow>
 
         <UniWindow id={styles.time} label="Wybierz godzinę wizyty">
-          <ChooseHour/>
+          <ChooseHour />
         </UniWindow>
 
         <div id={styles.buttons}>

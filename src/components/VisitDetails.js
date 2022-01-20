@@ -31,7 +31,7 @@ function VisitDetails() {
           purpose={button.purpose}
           price={button.price}
           onClick={() => {
-            setVisitType(button);
+          setVisitType(button);
           }}
         />
       ))}
