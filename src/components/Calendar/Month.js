@@ -48,7 +48,7 @@ function Month() {
     let setWeekend = isWeekend(days.length + 1);
     days.push({
       number: daysInPerviousMonth - addedDays + i,
-      weekend: setWeekend,
+      weekend: setWeekend, anotherMonth: true
     });
   }
 
@@ -56,7 +56,7 @@ function Month() {
   let numberOfDays = daysInMonth(monthNumber, 2022);
   for (let i = 1; i <= numberOfDays; i++) {
     let setWeekend = isWeekend(days.length + 1);
-    days.push({ number: i, weekend: setWeekend });
+    days.push({ number: i, weekend: setWeekend, anotherMonth: false });
   }
 
   //calculate max lenght (5 or 6 rows)
@@ -73,13 +73,13 @@ function Month() {
   //adding days from next month to fill the last row
   for (let i = 1; days.length < maxlenght; i++) {
     let setWeekend = isWeekend(days.length + 1);
-    days.push({ number: i, weekend: setWeekend });
+    days.push({ number: i, weekend: setWeekend, anotherMonth: true });
   }
 
   return (
     <div id="calendar_month">
       {days.map((day, i) => (
-        <Day day={day.number} isWeekend={day.weekend} />
+        <Day day={day.number} isWeekend={day.weekend} anotherMonth={day.anotherMonth} />
       ))}
     </div>
   );
