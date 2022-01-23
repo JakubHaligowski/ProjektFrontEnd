@@ -7,7 +7,7 @@ import BackButton from "../components/BackButton";
 import AcceptButton from "../components/AcceptButton";
 import ChooseHour from "../components/ChooseHour";
 import { Link } from "react-router-dom";
-import Calendar from "react-calendar";
+import Calendar from "../components/Calendar/Calendar";
 import { useVisitActions } from "../store/visit";
 import "react-calendar/dist/Calendar.css";
 
