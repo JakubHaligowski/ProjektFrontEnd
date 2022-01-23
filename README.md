@@ -1,10 +1,11 @@
 # TODO
--dodać przekazywanie informacji między podstronami\
--dodać wybór daty oraz godziny wizyty\
--poprawić css (jednakowanie cienie na wszystkich okienkach)\
 -lepsze skalowanie dla wersji mobilnej (główna strona)\
--skończyć stronę potwierdzania rezerwacji\
 -pogrupować pliki w folderze /components\
+-poprwaki CSS kalendarze (rozróżnienie dni z innych miesięcy)\
+-kalendarz poakzuje aktualną date\
+-integracja kalndarze z context\
+-inny format daty na ostatniej stronie\
+-dodać social media i NFZ na pierszej stornie\
 
 # Getting Started with Create React App
 
