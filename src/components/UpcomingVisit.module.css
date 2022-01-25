@@ -2,8 +2,6 @@
     margin: auto;
     width: 90%;
     height: 80px;
-    margin-bottom: 30px;
-    margin-top: 25px;
     display: flex;
     flex-direction: row;
     align-content: center;

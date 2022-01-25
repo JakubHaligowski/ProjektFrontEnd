@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { VisitContext } from "../store/visit";
 import styles from "./Summary.module.css";
-import moment from "moment";
 
 function Summary() {
   const {
@@ -12,12 +11,19 @@ function Summary() {
     },
   } = useContext(VisitContext);
 
+  let formatter = new Intl.DateTimeFormat("pl", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+
   return (
     <div className={styles.container}>
       <div className={styles.visit_info}>
         <span className={styles.title}>Termin:</span>
         <span className={styles.text}>
-          {moment(date).format("MM/DD/YYYY")} <br />
+          {formatter.format(date)}
+          <br />
           godzina: {hour}
         </span>
       </div>

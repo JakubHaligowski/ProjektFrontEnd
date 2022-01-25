@@ -4,6 +4,9 @@ import OptionsPanel from "../components/OptionsPanel";
 import MainPanel from "../components/MainPanel";
 import SmallWindow from "../components/SmallWindow";
 import UpcomingVisit from "../components/UpcomingVisit";
+import Socials from "../components/Socials";
+import { ReactComponent as NfzIcon } from "../icons/NFZ_icon.svg";
+
 
 function MainPage() {
   return (
@@ -16,7 +19,7 @@ function MainPage() {
         </div>
 
         <div id={styles.small_windows}>
-          <SmallWindow className={styles.window} title="Nadchodzące wizyty">
+          <SmallWindow className={styles.window_upcoming} title="Nadchodzące wizyty">
             <UpcomingVisit
               name="Jacek Soplica"
               date="Pojutrze"
@@ -24,8 +27,12 @@ function MainPage() {
             />
           </SmallWindow>
 
-          <SmallWindow title="Czat online" >
-            <div>Tu chyba jednak social media będą</div>
+          <SmallWindow id={styles.window_socials} title="Znajdź nas na:" >
+            <Socials/>
+          </SmallWindow>
+
+          <SmallWindow id={styles.window_nfz} title="Chuj wi co tu">
+            <NfzIcon />
           </SmallWindow>
         </div>
       </div>

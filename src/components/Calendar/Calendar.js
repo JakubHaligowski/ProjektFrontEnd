@@ -10,7 +10,7 @@ import "./Calendar.css";
 
 
 function Calendar() {
-  const [monthNumber, setMonthNumber] = useState(1);
+  const [monthNumber, setMonthNumber] = useState(new Date(2022).getMonth());
   const value = {monthNumber, setMonthNumber};
 
    return (

@@ -37,7 +37,7 @@ function MonthSelect() {
   return (
     <div id="month_select">
       <div>
-        <button className="button" onClick={() => previousMonthHandler()}>
+        <button className={monthNumber < 1 ? "button_disabled button" : "button"} onClick={() => previousMonthHandler()}>
           <Arrow
             stroke={monthNumber < 1 ? "#ECF1FF" : "#676868"}
             className="arrow1"
@@ -46,7 +46,7 @@ function MonthSelect() {
       </div>
       <div id="month_header">{months[monthNumber]}</div>
       <div>
-        <button className="button" onClick={() => nextMonthHandler()}>
+        <button className={monthNumber > 10 ? "button_disabled button" : "button"} onClick={() => nextMonthHandler()}>
           <Arrow
             stroke={monthNumber > 10 ? "#ECF1FF" : "#676868"}
             className="arrow2"

@@ -1,5 +1,5 @@
 #window {
-  height: 240px;
+  height: 100%;
   background: #ECF1FF;
   box-shadow: 3px 4px 5px #d3d9ff;
   border-radius: 30px;
@@ -25,6 +25,7 @@
 
 #content {
   display: flex;
+  height: calc(100% - 56px);
   align-items: center;
   justify-content: center;
 }
