@@ -20,11 +20,6 @@
   border-radius: 36px;
 }
 
-.window{
-  height: 300px;
-  background-color: rebeccapurple;
-}
-
 #main_window {
   display: flex;
   flex-direction: row;
@@ -36,10 +31,10 @@
 }
 
 #small_windows {
-  display: grid;
-  grid-template-rows: 220px 150px 150px;
-  row-gap: 30px;
-  height: fit-content;
+  display: flex;
+  height: 80%;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
 .window_upcoming{
@@ -50,9 +45,6 @@
   grid-row: 2/3;
 }
 
-#window_nfz{
-  grid-row: 3/4;
-}
 
 @media only screen and (max-width: 1350px) {
   .background {

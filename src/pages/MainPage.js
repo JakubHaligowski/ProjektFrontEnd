@@ -5,7 +5,6 @@ import MainPanel from "../components/MainPanel";
 import SmallWindow from "../components/SmallWindow";
 import UpcomingVisit from "../components/UpcomingVisit";
 import Socials from "../components/Socials";
-import { ReactComponent as NfzIcon } from "../icons/NFZ_icon.svg";
 
 
 function MainPage() {
@@ -26,13 +25,9 @@ function MainPage() {
               purpose="Szczepienie"
             />
           </SmallWindow>
-
-          <SmallWindow id={styles.window_socials} title="Znajdź nas na:" >
+          
+          <SmallWindow id={styles.window_socials} title="O nas:" >
             <Socials/>
-          </SmallWindow>
-
-          <SmallWindow id={styles.window_nfz} title="Chuj wi co tu">
-            <NfzIcon />
           </SmallWindow>
         </div>
       </div>
