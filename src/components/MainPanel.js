@@ -30,7 +30,7 @@ const doctors = [
   {
     id: 3,
     img: doc3,
-    name: "Anna Skóra",
+    name: "Jan Kowalski",
     specialization: "Lekarz rodzinny",
     date: "21.06",
     raiting: "4.9",
