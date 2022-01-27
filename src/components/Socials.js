@@ -18,11 +18,12 @@ function Socials() {
         </a>
         <a href="https://www.youtube.com/" target="_blank">
           <YouTubeIcon />
-        </a>        
-        
+        </a>      
       </div>
       <span className={styles.text}> </span>
-      <NfzIcon id={styles.nfz} />
+      <a href="https://www.nfz.gov.pl/" target="_blank">
+        <NfzIcon id={styles.nfz} />
+      </a>      
     </div>
   );
 }
