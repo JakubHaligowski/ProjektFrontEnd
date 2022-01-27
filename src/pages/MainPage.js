@@ -25,7 +25,7 @@ function MainPage() {
               purpose="Szczepienie"
             />
           </SmallWindow>
-          <SmallWindow id={styles.window_socials} title="O nas:" >
+          <SmallWindow id={styles.window_socials} title="O nas" >
             <Socials/>
           </SmallWindow>
         </div>

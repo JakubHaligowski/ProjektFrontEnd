@@ -10,12 +10,19 @@ function Socials() {
     <div id={styles.container}>
       <span className={styles.text}>Zajdź na nas na:</span>
       <div id={styles.socials_icons}>
-        <FacebookIcon />
-        <InstagramIcon />
-        <YouTubeIcon />
+        <a href="https://www.facebook.com/CentrumMedycznePolmed/" target='_blank'>
+          <FacebookIcon />
+        </a>
+        <a href="https://www.instagram.com/" target='_blank'>
+          <InstagramIcon />
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <YouTubeIcon />
+        </a>        
+        
       </div>
-      <span className={styles.text}>Nw co tu:XD</span>
-      <NfzIcon id={styles.nfz}/>
+      <span className={styles.text}> </span>
+      <NfzIcon id={styles.nfz} />
     </div>
   );
 }
