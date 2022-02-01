@@ -1,11 +1,7 @@
 # TODO
 -lepsze skalowanie dla wersji mobilnej (główna strona)\
 -pogrupować pliki w folderze /components\
--poprwaki CSS kalendarze (rozróżnienie dni z innych miesięcy)\
 -kalendarz poakzuje aktualną date\
--integracja kalndarze z context\
--inny format daty na ostatniej stronie\
--dodać social media i NFZ na pierszej stornie\
 
 # Getting Started with Create React App
 
