@@ -48,6 +48,7 @@
   background-color: white;
   border: none;
   border-radius: 15px;
+  cursor: pointer;
 }
 
 .button_disabled{
@@ -84,7 +85,9 @@
   height: 40px;
   width: 40px;
   border-radius: 50%;
+  cursor: pointer;
 }
+
 
 .day_frame:hover {
   background: rgba(255, 255, 255, 0.25);
@@ -102,6 +105,10 @@
   height: 40px;
   width: 40px;
   border-radius: 50%;
+}
+
+.day_frame_weekend{
+  cursor: not-allowed;
 }
 
 .arrow2 {

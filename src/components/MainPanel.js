@@ -23,7 +23,7 @@ const doctors = [
     id: 2,
     img: doc2,
     name: "Andrzej Mądry",
-    specialization: "Lekarz rodzinny",
+    specialization: "Pediatra",
     date: "Jutro",
     raiting: "2.9",
   },

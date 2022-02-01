@@ -45,7 +45,7 @@ function NewReservationPage() {
 
         <div id={styles.buttons}>
           <Link to="/" style={{ textDecoration: "none" }}>
-            <BackButton />
+            <BackButton text="Powrót" showArrow={true}/>
           </Link>
           <Link to="/confirm" style={{ textDecoration: "none" }}>
             <AcceptButton text="Umów wizyte" />

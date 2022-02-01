@@ -33,8 +33,8 @@ function ConfirmReservationPage() {
         </UniWindow>
 
         <div id={styles.buttons}>
-          <Link to="/new" style={{ textDecoration: "none" }}>
-            <BackButton />
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <BackButton text="Anuluj" showArrow={false}/>
           </Link>
           <Link to="/" style={{ textDecoration: "none" }}>
             <AcceptButton text="Potwierdzam" />

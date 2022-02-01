@@ -1,11 +1,11 @@
 import styles from './BackButton.module.css'
 import { ReactComponent as Arrow2} from '../icons/Arrow2.svg'
 
-function BackButton() {
+function BackButton(props) {
     return (
         <div className={styles.button}>
-        <Arrow2 />
-        <span className={styles.button_text}>Powrót</span>
+        {props.showArrow ? <Arrow2 /> : ""}
+        <span className={styles.button_text}>{props.text}</span>
         </div>
     );
 
