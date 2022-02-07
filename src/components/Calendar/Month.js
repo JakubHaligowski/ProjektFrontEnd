@@ -1,4 +1,3 @@
-//
 import React from "react";
 import Day from "./Day";
 import { useContext, useState } from "react";
@@ -19,6 +18,7 @@ function Month() {
     setVisitDate(d);
   }
 
+  
   //Utility functions
 
   //Returns of a days in a given month

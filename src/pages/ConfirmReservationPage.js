@@ -34,7 +34,7 @@ function ConfirmReservationPage() {
 
         <div id={styles.buttons}>
           <Link to="/" style={{ textDecoration: "none" }}>
-            <BackButton text="Anuluj" showArrow={false}/>
+            <BackButton text="Anuluj wizyte" showArrow={false}/>
           </Link>
           <Link to="/" style={{ textDecoration: "none" }}>
             <AcceptButton text="Potwierdzam" />
